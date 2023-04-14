@@ -20,6 +20,7 @@ function gameTippProgressFunc() {
   gameTippEndTimer = setInterval(function () {
     if (tippEndTime <= 0) {
       console.debug("Sajnos nem nyert próbálkozz újra");
+      sumElement.disabled = true;
       clearInterval(gameTippEndTimer);
     }
     gameTippEndProgressElement.value = 5 - tippEndTime;
