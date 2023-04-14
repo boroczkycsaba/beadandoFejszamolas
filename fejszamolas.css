@@ -2,28 +2,32 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-  }
+}
+
 body {
     max-width: 400px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
 }
+
 .container {
-    width:100%;
+    width: 100%;
     display: inline-flex;
     flex-direction: column;
 }
+
 h1 {
     padding-top: 20px;
     text-align: center;
     font-weight: bold;
 }
+
 button {
     width: calc(100% - 100px);
     border-radius: 20px;
     height: 50px;
     display: block;
-    background-image: linear-gradient(to bottom, #dca1a8 0%, #807aa5  80%);
+    background-image: linear-gradient(to bottom, #dca1a8 0%, #807aa5 80%);
     color: white;
     margin-left: auto;
     margin-right: auto;
@@ -32,36 +36,51 @@ button {
     border: 2px solid black;
     font-weight: bold;
 }
-         
+
 .numberCheckContent {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap:30px;
+    gap: 30px;
     font-size: xx-large;
 }
+
 input[type="number"] {
     font-size: xx-large;
 }
+
 .questionOrOkContent {
     display: block;
     font-size: xx-large;
     margin-top: 20px;
 }
+
 .szam {
     color: blue;
 }
+
 #questionOrOk {
     margin-left: 48%;
 }
+
 .fa-question {
     color: red;
 }
+
 .fa-thumbs-up {
     color: blue;
 }
+
 #gameTippEndProgress {
-    background-color: blue;
     margin-left: 30%;
     border-radius: 10px;
+    color: blue;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: blue;
 }
